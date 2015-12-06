@@ -1,0 +1,4 @@
+include ':lib'
+include ':graphic'
+project(':graphic').projectDir = new File(settingsDir, '../GraphicLibrary/lib')
+

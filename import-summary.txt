@@ -1,0 +1,108 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From Graphic:
+* .gitignore
+* .idea/
+* .idea/.name
+* .idea/compiler.xml
+* .idea/copyright/
+* .idea/copyright/profiles_settings.xml
+* .idea/gradle.xml
+* .idea/misc.xml
+* .idea/modules.xml
+* .idea/runConfigurations.xml
+* .idea/vcs.xml
+* _darcs/
+* _darcs/index
+* _darcs/inventory
+* _darcs/patches/
+* _darcs/patches/20060316154758-291b0-b4fa717a87f0d02a2fe2884f2f5882846001376e.gz
+* _darcs/patches/20060929154017-463de-f0b5570e339cfc9d46741ecd9322811fc3fc8369.gz
+* _darcs/patches/20061101070700-463de-d413b8aaebaf9510a75c4503394bacf2f839a281.gz
+* _darcs/patches/20061103181245-463de-0a65fbb573a21d65df42f8020a2759bdc243c11c.gz
+* _darcs/patches/20061109165414-463de-c62a44c58ae13b2b1d3bc596591a01365c50b245.gz
+* _darcs/patches/20070828115947-463de-1d53f03efe3b4066f34d1fe05af7e2279ec763a5.gz
+* _darcs/patches/20070829141147-463de-a564b1608a52477c6a2e61bcba93b80c5420752e.gz
+* _darcs/patches/20071014103459-291b0-6926e8189b2f132d8233446a9d5e7765161b9b0f.gz
+* _darcs/patches/20071014103519-291b0-6fa8125583d3acb36b76d4659d21a3ac0edfc6b6.gz
+* _darcs/patches/pending
+* _darcs/prefs/
+* _darcs/prefs/binaries
+* _darcs/prefs/boring
+* _darcs/prefs/defaultrepo
+* _darcs/prefs/motd
+* _darcs/prefs/repos
+* _darcs/pristine/
+* _darcs/pristine/.classpath
+* _darcs/pristine/.project
+* _darcs/pristine/src/
+* _darcs/pristine/src/se/
+* _darcs/pristine/src/se/lth/
+* _darcs/pristine/src/se/lth/df/
+* _darcs/pristine/src/se/lth/df/cb/
+* _darcs/pristine/src/se/lth/df/cb/graphic/
+* _darcs/pristine/src/se/lth/df/cb/graphic/BooleanValue.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/Graphic.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/GraphicComponent.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/HSLColorSpace.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/Label.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/Light.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/MultiGraphic.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/PaddingGraphic.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/PointyKnob.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/PushButton.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/ScrollableGraphicComponent.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/Size.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/Solid.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/Util.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/ValueUpdatedListener.java
+* build.gradle
+* gradle.properties
+* gradle/
+* gradle/wrapper/
+* gradle/wrapper/gradle-wrapper.jar
+* gradle/wrapper/gradle-wrapper.properties
+* gradlew
+* gradlew.bat
+* lib/
+* lib/.gitignore
+* lib/build.gradle
+* settings.gradle
+From Graphic_Android:
+* proguard-project.txt
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In Graphic:
+* lib/src/main/java/ => graphic/src/main/java/
+* lib/src/test/java/ => graphic/src/main/java/
+In Graphic_Android:
+* AndroidManifest.xml => graphic_Android/src/main/AndroidManifest.xml
+* assets/ => graphic_Android/src/main/assets
+* res/ => graphic_Android/src/main/res/
+* src/ => graphic_Android/src/main/java/
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
