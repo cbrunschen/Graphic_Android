@@ -1,4 +1,4 @@
 include ':lib'
 include ':graphic'
-project(':graphic').projectDir = new File(settingsDir, '../GraphicLibrary/lib')
+project(':graphic').projectDir = new File(settingsDir, '../Graphic/lib')
 
