@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AndroidGraphic.iml" filepath="$PROJECT_DIR$/AndroidGraphic.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../Graphic/lib/graphic.iml" filepath="$PROJECT_DIR$/../Graphic/lib/graphic.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lib/lib.iml" filepath="$PROJECT_DIR$/lib/lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Graphic_Android.iml" filepath="$PROJECT_DIR$/Graphic_Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Graphic/graphic/graphic.iml" filepath="$PROJECT_DIR$/../Graphic/graphic/graphic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/graphic_android/graphic_android.iml" filepath="$PROJECT_DIR$/graphic_android/graphic_android.iml" />
     </modules>
   </component>
 </project>
