@@ -147,7 +147,7 @@ public class GraphicView extends View implements GraphicParent {
       frame.y = scroller.getCurrY();
       constrainFrame(frame);
 
-      int v = (int) Math.round(scroller.getCurrVelocity());
+      int v = Math.round(scroller.getCurrVelocity());
       if (adjustment.dx < 0) {
         // X was adjusted to the left - we encountered the left edge
         edgeEffectLeft.onAbsorb(v);
@@ -170,7 +170,7 @@ public class GraphicView extends View implements GraphicParent {
 
   @Override
   protected void onDraw(Canvas canvas) {
-    canvas.drawColor(color.background_light);
+    canvas.drawColor(getResources().getColor(color.background_light));
     if (graphic == null) {
       return;
     }
