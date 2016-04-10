@@ -187,30 +187,41 @@ public class GraphicView extends View implements GraphicParent {
     surface.setCanvas(canvas);
     graphic.draw(surface);
     canvas.restoreToCount(saveCount);
-    
-    saveCount = canvas.save();
-    edgeEffectTop.draw(canvas);
-    canvas.restoreToCount(saveCount);
 
-    saveCount = canvas.save();
-    canvas.rotate(180, getWidth() / 2.0f, getHeight() / 2.0f);
-    edgeEffectBottom.draw(canvas);
-    canvas.restoreToCount(saveCount);
+    boolean animate = false;
+    if (!edgeEffectTop.isFinished()) {
+      saveCount = canvas.save();
+      edgeEffectTop.draw(canvas);
+      canvas.restoreToCount(saveCount);
+      animate = true;
+    }
 
-    saveCount = canvas.save();
-    canvas.rotate(270);
-    canvas.translate(-getHeight(), 0);
-    edgeEffectLeft.draw(canvas);
-    canvas.restoreToCount(saveCount);
+    if (!edgeEffectBottom.isFinished()) {
+      saveCount = canvas.save();
+      canvas.rotate(180, getWidth() / 2.0f, getHeight() / 2.0f);
+      edgeEffectBottom.draw(canvas);
+      canvas.restoreToCount(saveCount);
+      animate = true;
+    }
 
-    saveCount = canvas.save();
-    canvas.rotate(90);
-    canvas.translate(0, -getWidth());
-    edgeEffectRight.draw(canvas);
-    canvas.restoreToCount(saveCount);
+    if (!edgeEffectLeft.isFinished()) {
+      saveCount = canvas.save();
+      canvas.rotate(270);
+      canvas.translate(-getHeight(), 0);
+      edgeEffectLeft.draw(canvas);
+      canvas.restoreToCount(saveCount);
+      animate = true;
+    }
 
-    boolean animate = !(edgeEffectTop.isFinished() && edgeEffectBottom.isFinished()
-        && edgeEffectLeft.isFinished() && edgeEffectRight.isFinished());
+    if (!edgeEffectRight.isFinished()) {
+      saveCount = canvas.save();
+      canvas.rotate(90);
+      canvas.translate(0, -getWidth());
+      edgeEffectRight.draw(canvas);
+      canvas.restoreToCount(saveCount);
+      animate = true;
+    }
+
     if (animate) {
       postInvalidateOnAnimation();
     }
